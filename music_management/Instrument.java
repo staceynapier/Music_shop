@@ -24,4 +24,8 @@ public abstract class Instrument{
   public String getColour(){
     return this.colour;
   }
+
+  public String getInstrumentType(){
+    return this.instrument_type;
+  }
 }

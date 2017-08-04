@@ -26,4 +26,9 @@ public class GuitarTest{
     assertEquals("natural", guitar.getColour());
   }
 
+  @Test
+  public void hasInstrumentType(){
+    assertEquals("string", guitar.getInstrumentType());
+  }
+
 }
