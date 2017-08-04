@@ -37,4 +37,15 @@ public class ClarinetTest{
     assertEquals("single", clarinet.getReedType());
   }
 
+  @Test
+  public void hasBuyPrice(){
+    assertEquals(17.00, clarinet.getBuyPrice(), 0.01);
+  }
+
+  @Test
+  public void hasSalePrice(){
+    assertEquals(45.00, clarinet.getSalePrice(), 0.01);
+  }
+
+
 }
