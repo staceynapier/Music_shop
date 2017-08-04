@@ -47,5 +47,10 @@ public class ClarinetTest{
     assertEquals(45.00, clarinet.getSalePrice(), 0.01);
   }
 
+  @Test
+  public void canCalculateMarkup(){
+    assertEquals(37.78, clarinet.calculateMarkup(), 0.01);
+  }
+
 
 }

@@ -40,4 +40,8 @@ public abstract class Instrument{
   public Double getSalePrice(){
     return this.salePrice;
   }
+
+  public Double calculateMarkup(){
+    return (this.buyPrice / this.salePrice) *100;
+  }
 }

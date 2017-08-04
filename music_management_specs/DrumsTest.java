@@ -46,5 +46,9 @@ public class DrumsTest{
       assertEquals(299.00, drums.getSalePrice(), 0.01);
     }
 
+    @Test
+    public void canCalculateMarkup(){
+      assertEquals(43.48, drums.calculateMarkup(), 0.01);
+    }
 
 }
