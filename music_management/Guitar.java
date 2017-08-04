@@ -20,4 +20,8 @@ public class Guitar extends Instrument implements Playable, Sellable {
     return this.noOfStrings;
   }
 
+  public String getType(){
+    return this.type;
+  }
+
 }
