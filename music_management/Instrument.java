@@ -32,4 +32,12 @@ public abstract class Instrument{
   public String getInstrumentType(){
     return this.instrumentType;
   }
+
+  public Double getBuyPrice(){
+    return this.buyPrice;
+  }
+
+  public Double getSalePrice(){
+    return this.salePrice;
+  }
 }

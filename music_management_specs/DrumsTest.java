@@ -36,4 +36,15 @@ public class DrumsTest{
       assertEquals(5, drums.getNoOfDrums());
     }
 
+    @Test
+    public void hasBuyPrice(){
+      assertEquals(130.00, drums.getBuyPrice(), 0.01);
+    }
+
+    @Test
+    public void hasSalePrice(){
+      assertEquals(299.00, drums.getSalePrice(), 0.01);
+    }
+
+
 }

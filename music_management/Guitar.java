@@ -24,12 +24,4 @@ public class Guitar extends Instrument implements Playable, Sellable {
     return this.type;
   }
 
-  public Double getBuyPrice(){
-    return this.buyPrice;
-  }
-
-  public Double getSalePrice(){
-    return this.salePrice;
-  }
-
 }
