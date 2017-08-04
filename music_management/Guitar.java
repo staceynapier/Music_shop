@@ -3,17 +3,21 @@ import actions.*;
 
 public class Guitar extends Instrument implements Playable, Sellable {
 
-  int no_of_strings;
+  int noOfStrings;
   String type;
 
-  public Guitar(String material, String brand, String colour, String instrument_type, int no_of_strings, String type){
+  public Guitar(String material, String brand, String colour, String instrument_type, int noOfStrings, String type){
     super(material, brand, colour, instrument_type);
-    this.no_of_strings = no_of_strings;
+    this.noOfStrings = noOfStrings;
     this.type = type;
   }
 
   public String play(){
     return "vrum";
+  }
+
+  public int getNoOfStrings(){
+    return this.noOfStrings;
   }
 
 }
