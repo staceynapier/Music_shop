@@ -16,4 +16,9 @@ public class GuitarTest{
     assertEquals("bamboo", guitar.getMaterial());
   }
 
+  @Test
+  public void hasBrand(){
+    assertEquals("Gibson", guitar.getBrand());
+  }
+
 }

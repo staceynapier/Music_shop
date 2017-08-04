@@ -16,4 +16,8 @@ public abstract class Instrument{
   public String getMaterial(){
     return this.material;
   }
+
+  public String getBrand(){
+    return this.brand;
+  }
 }
