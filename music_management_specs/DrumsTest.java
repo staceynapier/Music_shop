@@ -8,7 +8,7 @@ public class DrumsTest{
 
   @Before
   public void before() {
-    drums = new Drums("maple and steel", "Pearl", "white", "percussion", 5);
+    drums = new Drums("maple and steel", "Pearl", "white", "percussion", 130.00, 299.00,5);
   }
 
   @Test

@@ -6,8 +6,8 @@ public class Guitar extends Instrument implements Playable, Sellable {
   int noOfStrings;
   String type;
 
-  public Guitar(String material, String brand, String colour, String instrument_type, int noOfStrings, String type){
-    super(material, brand, colour, instrument_type);
+  public Guitar(String material, String brand, String colour, String instrumentType, Double buyPrice, Double salePrice, int noOfStrings, String type){
+    super(material, brand, colour, instrumentType, buyPrice, salePrice);
     this.noOfStrings = noOfStrings;
     this.type = type;
   }
@@ -22,6 +22,14 @@ public class Guitar extends Instrument implements Playable, Sellable {
 
   public String getType(){
     return this.type;
+  }
+
+  public Double getBuyPrice(){
+    return this.buyPrice;
+  }
+
+  public Double getSalePrice(){
+    return this.salePrice;
   }
 
 }

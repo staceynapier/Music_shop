@@ -4,13 +4,17 @@ public abstract class Instrument{
   String material;
   String brand;
   String colour;
-  String instrument_type;
+  String instrumentType;
+  Double buyPrice;
+  Double salePrice;
 
-  public Instrument(String material, String brand, String colour, String instrument_type) {
+  public Instrument(String material, String brand, String colour, String instrumentType, Double buyPrice, Double salePrice) {
     this.material = material;
     this.brand = brand;
     this.colour = colour;
-    this.instrument_type = instrument_type;
+    this.instrumentType = instrumentType;
+    this.buyPrice = buyPrice;
+    this.salePrice = salePrice;
   }
 
   public String getMaterial(){
@@ -26,6 +30,6 @@ public abstract class Instrument{
   }
 
   public String getInstrumentType(){
-    return this.instrument_type;
+    return this.instrumentType;
   }
 }

@@ -5,8 +5,8 @@ public class Clarinet extends Instrument implements Playable, Sellable {
 
   String reedType;
 
-  public Clarinet(String material, String brand, String colour, String instrument_type, String reedType){
-    super(material, brand, colour, instrument_type);
+  public Clarinet(String material, String brand, String colour, String instrumentType, Double buyPrice, Double salePrice, String reedType){
+    super(material, brand, colour, instrumentType, buyPrice, salePrice);
     this.reedType = reedType;
   }
 

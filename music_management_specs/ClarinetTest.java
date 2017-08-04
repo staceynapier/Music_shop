@@ -8,7 +8,7 @@ public class ClarinetTest{
 
   @Before
   public void before(){
-    clarinet = new Clarinet("grenadilla", "Yamaha", "black", "woodwind", "single");
+    clarinet = new Clarinet("grenadilla", "Yamaha", "black", "woodwind", 17.00, 45.00, "single");
   }
 
   @Test
