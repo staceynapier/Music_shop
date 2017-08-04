@@ -14,9 +14,12 @@ public class Shop {
     stock.add(item);
   }
 
-  public void clear(){
-    stock = null;
+  public Sellable clear(){
+    if(itemCount() > 0) {
+      return stock.remove(0);
+    }
+    return null;
   }
 
-
+  
 } 

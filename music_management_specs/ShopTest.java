@@ -1,6 +1,7 @@
 import static org.junit.Assert.*;
 import org.junit.*;
 import music_management.*;
+import actions.*;
 
 public class ShopTest{
 
@@ -22,10 +23,11 @@ public class ShopTest{
   }
 
   @Test
-  public void canRemoveAllFromShop() {
+  public void canRemoveItemFromShop() {
     shop.add(resin);
-    shop.clear();
-    assertEquals(0, shop.itemCount());
+    Sellable item = shop.clear();
+    Resin addedItem = (Resin) item;
+    assertEquals("Amber", addedItem.getBrand());
   }
 
 }
