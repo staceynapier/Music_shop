@@ -18,8 +18,4 @@ public class Drums extends Instrument implements Playable, Sellable {
     return "bang bang";
   }
 
-  // public int calculateMarkup(){
-
-  // }
-
 }
