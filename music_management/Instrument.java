@@ -20,4 +20,8 @@ public abstract class Instrument{
   public String getBrand(){
     return this.brand;
   }
+
+  public String getColour(){
+    return this.colour;
+  }
 }
