@@ -21,4 +21,19 @@ public class DrumSticksTest{
     assertEquals("Yamaha", drumSticks.getBrand());
   }
 
+  @Test
+  public void hasBuyPrice(){
+    assertEquals(0.50, drumSticks.getBuyPrice(), 0.01);
+  }
+
+  @Test
+  public void hasSalePrice(){
+    assertEquals(4.00, drumSticks.getSalePrice(), 0.01);
+  }
+
+  @Test
+  public void canCalculateMarkup(){
+    assertEquals(12.50, drumSticks.calculateMarkup(), 0.01);
+  }
+
 }

@@ -16,4 +16,19 @@ public class MouthPieceCleanerTest{
     assertEquals("CleanMe", mouthPieceCleaner.getBrand());
   }
 
+  @Test
+  public void hasBuyPrice(){
+    assertEquals(0.75, mouthPieceCleaner.getBuyPrice(), 0.01);
+  }
+
+  @Test
+  public void hasSalePrice(){
+    assertEquals(4.99, mouthPieceCleaner.getSalePrice(), 0.01);
+  }
+
+  @Test
+  public void canCalculateMarkup(){
+    assertEquals(15.03, mouthPieceCleaner.calculateMarkup(), 0.01);
+  }
+
 }

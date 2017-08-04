@@ -27,4 +27,12 @@ public class DrumSticks implements Sellable {
     return this.brand;
   }
 
+  public Double getBuyPrice(){
+    return this.buyPrice;
+  }
+
+  public Double getSalePrice(){
+    return this.salePrice;
+  }
+
 }
